@@ -11,7 +11,7 @@
     - name:                              repository
       displayName:                       Source repository
       type:                              string
-      default:                           https://github.com/Azure/sap-automation-bootstrap.git
+      default:                           https://github.com/ezejiofor/sap-automation-bootstrap.git
 
     - name:                              branch
       displayName:                       Source branch to update from

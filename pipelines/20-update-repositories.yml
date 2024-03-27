@@ -11,12 +11,12 @@
     - name:                              repository
       displayName:                       Source repository
       type:                              string
-      default:                           https://github.com/Azure/sap-automation.git
+      default:                           https://github.com/ezejiofor/sap-automation.git
 
     - name:                              sample_repository
       displayName:                       Sample source repository
       type:                              string
-      default:                           https://github.com/Azure/SAP-automation-samples.git
+      default:                           https://github.com/ezejiofor/SAP-automation-samples.git
 
     - name:                              branch
       displayName:                       Source branch to update from
