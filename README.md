@@ -7,7 +7,7 @@ It will also contain the Terraform configuration files used for deploying the in
 ## How it works
 
 During pipeline execution the two repositories will be present on the deployer-agent. Each of the repositories will be mapped using the following:
-# WATCH THIS - GEORGE
+# WATCH THIS - GEORGE 
 - sap-automation will be mapped to ```/sap-automation```
 - customer configuration repository will be mapped to ```/config```
 
