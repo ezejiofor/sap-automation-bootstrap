@@ -17,7 +17,7 @@ parameters:
   - name:                              sap_system
     displayName:                       "SAP System configuration name, use this format: ENV-LOCA-VNET-SID"
     type:                              string
-    default:                           DEV-WEEU-SAP01-X00
+    default:                           PROD-WEEU-SAP01-X00
 
   - name:                              cleanup_zone
     displayName:                       Remove the SAP workload zone
@@ -27,12 +27,12 @@ parameters:
   - name:                              workload_zone
     displayName:                       "SAP workload zone configuration name, use this format: ENV-LOCA-VNET-INFRASTRUCTURE"
     type:                              string
-    default:                           DEV-WEEU-SAP01-INFRASTRUCTURE
+    default:                           PROD-WEEU-SAP01-INFRASTRUCTURE
 
   - name:                              workload_environment_parameter
     displayName:                       Workload environment (DEV, QUA, PRD)
     type:                              string
-    default:                           DEV
+    default:                           PROD
 
   - name:                              deployer_environment_parameter
     displayName:                       Deployer Environment name (MGMT, DEV, QA, PRD, ...)
