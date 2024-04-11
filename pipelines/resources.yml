@@ -1,8 +1,9 @@
 resources:
   repositories:
     - repository: sap-automation
-      type: git
-      name: sap deployment automation framework/sap-automation
+      type: github
+      name: ezejiofor/sap-automation
+      endpoint: <MyGithubConnector>
       ref: refs/heads/main
 
 parameters:
