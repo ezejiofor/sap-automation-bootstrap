@@ -10,12 +10,12 @@ parameters:
   - name:                              sap_system
     displayName:                       "SAP System configuration name, use the following syntax: ENV-LOCA-VNET-SID"
     type:                              string
-    default:                           PROD-WEEU-SAP01-X00
+    default:                           DEV-WEEU-SAP01-X00
 
   - name:                              environment
     displayName:                       Workload Environment (DEV, QA, PRD, ...)
     type:                              string
-    default:                           PROD
+    default:                           DEV
 
   - name:                              test
     displayName:                       Test only
