@@ -9,7 +9,7 @@ parameters:
   - name:                              deployer_region_parameter
     displayName:                       Deployer region name code (MGMT, DEV, QA, PRD, ...)
     type:                              string
-    default:                           WEEU
+    default:                           NOEU
     values:
       - AUCE
       - AUC2
@@ -333,8 +333,8 @@ stages:
                     $pipeLineName="01-deploy-control-plane.yml"
                     $filePath = (Join-Path -path $FolderName -ChildPath $pipeLineName)
 
-                    (Get-Content $filePath).Replace("MGMT-WEEU-DEP01-INFRASTRUCTURE","$(deployer_folder)") | Set-Content $filePath
-                    (Get-Content $filePath).Replace("MGMT-WEEU-SAP_LIBRARY","$(library_folder)") | Set-Content $filePath
+                    (Get-Content $filePath).Replace("MGMT-NOEU-DEP01-INFRASTRUCTURE","$(deployer_folder)") | Set-Content $filePath
+                    (Get-Content $filePath).Replace("MGMT-NOEU-SAP_LIBRARY","$(library_folder)") | Set-Content $filePath
                     (Get-Content $filePath).Replace("MGMT","$(deployer_environment)") | Set-Content $filePath
 
                     git add -f $filePath
@@ -344,8 +344,8 @@ stages:
                     $pipeLineName="12-remove-control-plane.yml"
                     $filePath = (Join-Path -path $FolderName -ChildPath $pipeLineName)
 
-                    (Get-Content $filePath).Replace("MGMT-WEEU-DEP01-INFRASTRUCTURE","$(deployer_folder)") | Set-Content $filePath
-                    (Get-Content $filePath).Replace("MGMT-WEEU-SAP_LIBRARY","$(library_folder)") | Set-Content $filePath
+                    (Get-Content $filePath).Replace("MGMT-NOEU-DEP01-INFRASTRUCTURE","$(deployer_folder)") | Set-Content $filePath
+                    (Get-Content $filePath).Replace("MGMT-NOEU-SAP_LIBRARY","$(library_folder)") | Set-Content $filePath
                     (Get-Content $filePath).Replace("MGMT","$(deployer_environment)") | Set-Content $filePath
 
                     git add -f $filePath
@@ -364,7 +364,7 @@ stages:
                     $pipeLineName="03-sap-system-deployment.yml"
                     $filePath = (Join-Path -path $FolderName -ChildPath $pipeLineName)
 
-                    (Get-Content $filePath).Replace("WEEU","$(deployer_region)") | Set-Content $filePath
+                    (Get-Content $filePath).Replace("NOEU","$(deployer_region)") | Set-Content $filePath
                     (Get-Content $filePath).Replace("MGMT","$(deployer_environment)") | Set-Content $filePath
 
                     git add -f $filePath
@@ -375,7 +375,7 @@ stages:
                     $pipeLineName="04-sap-software-download.yml"
                     $filePath = (Join-Path -path $FolderName -ChildPath $pipeLineName)
 
-                    (Get-Content $filePath).Replace("WEEU","$(deployer_region)") | Set-Content $filePath
+                    (Get-Content $filePath).Replace("NOEU","$(deployer_region)") | Set-Content $filePath
                     (Get-Content $filePath).Replace("MGMT","$(deployer_environment)") | Set-Content $filePath
 
                     git add -f $filePath
@@ -386,7 +386,7 @@ stages:
                     $pipeLineName="10-remover-terraform.yml"
                     $filePath = (Join-Path -path $FolderName -ChildPath $pipeLineName)
 
-                    (Get-Content $filePath).Replace("WEEU","$(deployer_region)") | Set-Content $filePath
+                    (Get-Content $filePath).Replace("NOEU","$(deployer_region)") | Set-Content $filePath
                     (Get-Content $filePath).Replace("MGMT","$(deployer_environment)") | Set-Content $filePath
 
                     git add -f $filePath

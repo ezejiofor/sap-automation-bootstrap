@@ -49,7 +49,7 @@ parameters:
   - name:                              region
     displayName:                       Control Plane (SAP Library) location code
     type:                              string
-    default:                           WEEU
+    default:                           NOEU
 
   - name:                              extra_params
     displayName:                       Extra Parameters

@@ -10,7 +10,7 @@ parameters:
   - name:                              workload_zone
     displayName:                       "Workload zone configuration name, use the following syntax: ENV-LOCA-VNET-INFRASTRUCTURE"
     type:                              string
-    default:                           DEV-WEEU-SAP01-INFRASTRUCTURE
+    default:                           DEV-NOEU-SAP01-INFRASTRUCTURE
 
   - name:                              workload_environment_parameter
     displayName:                       Workload Environment (DEV, QUA, PRD, ...)
@@ -25,7 +25,7 @@ parameters:
   - name:                              deployer_region_parameter
     displayName:                       Deployer region name code (MGMT, DEV, QA, PRD, ...)
     type:                              string
-    default:                           WEEU
+    default:                           NOEU
     values:
       - AUCE
       - AUC2
@@ -70,7 +70,7 @@ parameters:
       - UKSO
       - UKWE
       - WCUS
-      - WEEU
+      - NOEU
       - WEIN
       - WEUS
       - WUS2
